@@ -7,7 +7,7 @@ node {
 
 	stage('Build image'){
 		app = docker.build('gammablaze/example-app')
-	{
+	}
 
 	stage('Push image'){
 		docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials'){
